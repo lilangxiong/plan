@@ -2,7 +2,7 @@
 
 ### HTML/CSS篇
 
-- [x] [语义化](https://github.com/lilangxiong/plan/blob/master/senantization.md)
+- [x] [语义化](https://github.com/lilangxiong/plan/blob/master/semantization.md)
 
 - [ ] 常见布局及居中（水平、垂直、栅格）
 
