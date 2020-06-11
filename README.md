@@ -62,7 +62,7 @@
 
 - [ ] CDN及DNS
 
-- [x] [ 输入url到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url.md)
+- [x] [ 输入url到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url/url.md)
 
 ### node篇
 
