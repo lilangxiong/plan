@@ -18,7 +18,7 @@
 ### JS篇
 - [ ] javascript的执行过程
 
-- [x] [执行上下文、作用域、作用域链、this、闭包](https://github.com/lilangxiong/plan/blob/master/exectionContext/exectionContext.md)
+- [x] [执行上下文、作用域、作用域链、this、闭包](https://github.com/lilangxiong/plan/blob/master/executionContext/executionContext.md)
 
 - [ ] 垃圾回收机制
 
