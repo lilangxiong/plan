@@ -2,7 +2,7 @@
 
 ### 面试
 
-- [x] [面试]](https://github.com/lilangxiong/plan/blob/master/interview/interview.md)
+- [x] [面试](https://github.com/lilangxiong/plan/blob/master/interview/interview.md)
 
 ### HTML/CSS篇
 
