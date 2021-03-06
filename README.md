@@ -1,5 +1,9 @@
 # 个人提升计划
 
+### 面试
+
+- [x] [面试]](https://github.com/lilangxiong/plan/blob/master/interview/interview.md)
+
 ### HTML/CSS篇
 
 - [x] [语义化](https://github.com/lilangxiong/plan/blob/master/semantic.md)
@@ -28,7 +32,7 @@
 
 - [ ] 原型链
 
-- [ ] promise、迭代器、生成器
+- [x] [promise、迭代器、生成器](https://github.com/lilangxiong/plan/blob/master/promise/promise.md)
 
 - [ ] 常见API函数
 
@@ -62,7 +66,7 @@
 
 - [ ] CDN及DNS
 
-- [x] [ 输入url到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url/url.md)
+- [x] [输入url到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url/url.md)
 
 ### node篇
 
@@ -133,7 +137,7 @@
 
 - [ ] vuex
 
-- [ ] vue-router
+- [x] [vue-router](https://github.com/lilangxiong/plan/blob/master/vueRouter/vueRouter.md)
 
 ### 项目篇
 
@@ -170,3 +174,5 @@
 - [ ] 经常去什么技术网站？读过什么书?
 
 - [ ] 前沿的web标准、技术（微前端、serverless、webComponent等）
+
+- [x] [webRTC](https://github.com/lilangxiong/plan/blob/master/webrtc/webrtc.md)
