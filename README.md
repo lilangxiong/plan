@@ -125,6 +125,9 @@
 
 - [ ] vue和react的区别
 
+- [x] [vue响应式原理](https://github.com/lilangxiong/plan/blob/master/vueReactivity/vueReactivity.md)
+
+
 - [ ] 虚拟dom的原理
 
 - [ ] 双向绑定的原理（收集依赖、触发更新）、vue3为何使用proxy，两者的区别

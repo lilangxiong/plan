@@ -1,13 +1,6 @@
 ## 手写简版vue-router
 
 ```javascript
-/*
- * @Author: LiLangXiong680
- * @Date: 2021-03-06 20:43:41
- * @LastEditors: LiLangXiong680
- * @LastEditTime: 2021-03-06 21:06:58
- * @FilePath: /plan/vueRouter/src/vue-router/index.js
- */
 let _Vue = null
 
 export default class VueRouter {
