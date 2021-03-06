@@ -1,3 +1,10 @@
+/*
+ * @Author: LiLangXiong680
+ * @Date: 2021-03-06 20:43:41
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-06 21:06:58
+ * @FilePath: /plan/vueRouter/src/vue-router/index.js
+ */
 let _Vue = null
 
 export default class VueRouter {
@@ -14,10 +21,10 @@ export default class VueRouter {
       beforeCreate() {
         // 只有实例才需要执行，组件不需要
         if (this.$options.router) {
-          // 将VsueRouter实例挂载在prototype上，所有子组件都可以拿到
+          // 将VueRouter实例挂载在prototype上，所有子组件都可以拿到
           // 作用就体现在router-link中的this.$router.data.current，子组件实例也能获取$router
           _Vue.prototype.$router = this.$options.router
-          this.options.router.init()
+          this.$options.router.init()
         }
       },
     })
@@ -91,7 +98,7 @@ export default class VueRouter {
   initEvent() {
     // 处理点击浏览器导航栏前进后退按钮时的当前视图变更
     window.addEventListener('popstate', () => {
-      this.current = window.location.pathname
+      this.data.current = window.location.pathname
     })
   }
 }
