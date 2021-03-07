@@ -376,7 +376,9 @@ class Vue {
   - 负责把 data 选项中的属性转换成响应式数据
   - data 中的某个属性也是对象，把该属性转换成响应式数据
   - 数据变化发送通知
+  
 - 结构
+
 ![Observer结构](./image/Observer结构.png)
 
 ```javascript
@@ -589,6 +591,7 @@ class Vue {
 - 功能
   - 收集依赖，添加观察者(watcher)
   - 通知所有观察者
+
 - 结构
 
 ![Dep结构](./image/Dep结构.png)
@@ -661,7 +664,9 @@ class Observer {
 - 功能
   - 当数据变化触发依赖， dep 通知所有的 Watcher 实例更新视图
   - 自身实例化的时候往 dep 对象中添加自己
+
 - 结构
+
 ![Watcher结构](./image/Watcher结构.png)
 
 ```javascript
