@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>差值表达式</h1>
+    <h3>{{msg}}</h3>
+    <h3>{{count}}</h3>
+
+    <h1>v-text</h1>
+    <h3 v-text="msg"></h3>
+
+    <h1>v-model</h1>
+    <input type="text" v-model="msg">
+    <input type="text" v-model="count">
+  </div>
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.common.dev.js"></script> -->
+  <script src="./dep.js"></script>
+  <script src="./watcher.js"></script>
+  <script src="./compiler.js"></script>
+  <script src="./observer.js"></script>
+  <script src="./vue.js"></script>
+  <script>
+    let vm = new Vue({
+      el: '#app',
+      data: {
+        msg: 'Hello Vue',
+        count: 20
+      }
+    })
+
+    console.log(vm)
+  </script>
+</body>
+
+</html>
