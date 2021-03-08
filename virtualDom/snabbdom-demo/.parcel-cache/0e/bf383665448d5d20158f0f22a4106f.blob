@@ -1,0 +1,13 @@
+"use strict";
+
+var _init = require("snabbdom/build/package/init");
+
+var _h = require("snabbdom/build/package/h");
+
+const patch = (0, _init.init)([]);
+let vnode = (0, _h.h)('div#container', [(0, _h.h)('h1', 'Hello Snabbdom'), (0, _h.h)('p', '这是一个p')]);
+let app = document.querySelector('#app');
+let oldVnode = patch(app, vnode);
+setTimeout(() => {
+  vnode = (0, _h.h)('');
+}, 2000);

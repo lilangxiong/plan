@@ -1,0 +1,3 @@
+"use strict";
+
+var _init = require("snabbdom/build/package/init");

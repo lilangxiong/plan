@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snabbdom-demo</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- <script src="./src/01-basicusage.js"></script> -->
+  <script src="ee5bc04aaca79d0a398d8b580a8a92a7"></script>
+</body>
+
+</html>

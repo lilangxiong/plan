@@ -1,0 +1,24 @@
+"use strict";
+
+var _init = require("snabbdom/build/package/init");
+
+var _h = require("snabbdom/build/package/h");
+
+/*
+ * @Author: LiLangXiong680
+ * @Date: 2021-03-07 20:51:48
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-07 20:53:09
+ * @FilePath: /plan/virtualDom/snabbdom-demo/src/02-basicusage.js
+ */
+const path = (0, _init.init)([]); // 第一个参数：标签+选择器
+// 第二个参数：如果是字符串就是标签中的文本内容
+
+let vnode = (0, _h.h)('div#container', 'Hello World');
+let app = document.querySelector('#app'); // 第一个参数：旧的VNode，可以是DOM元素
+// 第二个参数：新的VNode
+// 返回新的VNode
+
+let oldVnode = path(app, vnode);
+vnode = (0, _h.h)('div#container.xxx', 'Hello World2');
+path(oldVnode, vnode);

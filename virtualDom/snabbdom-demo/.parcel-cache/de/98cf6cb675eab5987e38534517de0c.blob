@@ -1,0 +1,18 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.vnode = vnode;
+
+function vnode(sel, data, children, text, elm) {
+  const key = data === undefined ? undefined : data.key;
+  return {
+    sel,
+    data,
+    children,
+    text,
+    elm,
+    key
+  };
+}

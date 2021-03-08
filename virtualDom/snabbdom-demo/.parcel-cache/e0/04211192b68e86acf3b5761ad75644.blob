@@ -1,0 +1,13 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.primitive = primitive;
+exports.array = void 0;
+const array = Array.isArray;
+exports.array = array;
+
+function primitive(s) {
+  return typeof s === 'string' || typeof s === 'number';
+}

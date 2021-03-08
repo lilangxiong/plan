@@ -1,0 +1,19 @@
+"use strict";
+
+var _init = require("snabbdom/build/package/init");
+
+var _h = require("snabbdom/build/package/h");
+
+var _style = require("snabbdom/build/package/modules/style");
+
+var _eventListeners = require("snabbdom/build/package/modules/eventListeners");
+
+// 1. 导入模块
+// 2. 注册模块
+const patch = (0, _init.init)([_style.styleModule, _eventListeners.eventListenersModule]); // 3. 使用h() 函数的第二个参数传入模块中使用的数据（对象）
+
+let vnode = (0, _h.h)('div#container', [(0, _h.h)('h1', {
+  style: {
+    backgroundColor: 'red'
+  }
+})]);

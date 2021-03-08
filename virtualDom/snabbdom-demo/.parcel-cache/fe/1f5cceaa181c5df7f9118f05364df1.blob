@@ -1,0 +1,16 @@
+"use strict";
+
+var _init = require("snabbdom/build/package/init");
+
+var _h = require("snabbdom/build/package/h");
+
+/*
+ * @Author: LiLangXiong680
+ * @Date: 2021-03-07 21:04:21
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-07 21:06:01
+ * @FilePath: /plan/virtualDom/snabbdom-demo/src/03-modules.js
+ */
+const patch = (0, _init.init)([]); // 1. 导入模块
+// 2. 注册模块
+// 3. 使用h() 函数的第二个参数传入模块中使用的数据（对象）

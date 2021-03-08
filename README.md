@@ -14,9 +14,11 @@
 
 - [ ] CSS3新特性、动画实现方式以及它们之间的区别
 
-- [ ] flex布局
+- [ ] flex布局、grid布局
 
 - [ ] 盒模型
+
+- [ ] BFC
 
 
 ### JS篇
@@ -34,15 +36,16 @@
 
 - [x] [promise、迭代器、生成器](https://github.com/lilangxiong/plan/blob/master/promise/promise.md)
 
-- [ ] 常见API函数
-
 - [ ] 设计模式
 
 - [ ] 模块化，commonJS，es6，cmd，amd
 
 - [ ] 组件化
 
-- [ ] 面向对象
+- [ ] 函数式编程，函数柯里化
+
+- [ ] js常见API函数
+
 
 ### 网络篇
 
@@ -68,26 +71,9 @@
 
 - [x] [输入url到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url/url.md)
 
-### node篇
-
-- [ ] node特性
-
-- [ ] 多进程、cluster、child process
-
-- [ ] pm2的原理、进程守护、日志等
-
-- [ ] koa/express的特性及中间件的原理
-
-- [ ] express、koa，两者区别
-
-- [ ] nginx的简单配置，反向代理实现，转发实现，如何实现负载均衡的、日志
-
-- [ ] 数据库、负载均衡、高并发
-
-
 ### 移动篇
 
-- [ ] 自适应（rem）
+- [ ] 自适应（rem、vh、vw）
 
 - [ ] H5与原生的交互原理（jsBridge）、webview
 
@@ -107,6 +93,22 @@
 
 - [ ] 进程和线程
 
+### node篇
+
+- [ ] node特性
+
+- [ ] 多进程、cluster、child process
+
+- [ ] pm2的原理、进程守护、日志等
+
+- [ ] koa/express的特性及中间件的原理
+
+- [ ] express、koa，两者区别
+
+- [ ] nginx的简单配置，反向代理实现，转发实现，如何实现负载均衡的、日志
+
+- [ ] 数据库、负载均衡、高并发
+
 ### 算法篇
 
 - [ ] 常见数据结构：栈、堆、队列、链表、集合、字典、散列集
@@ -119,6 +121,7 @@
 
 - [ ] 高级数据结构：树、图、广度优先/深度优先搜索
 
+
 ### 框架篇
 
 - [ ] vue解决了什么问题
@@ -127,10 +130,7 @@
 
 - [x] [vue响应式原理](https://github.com/lilangxiong/plan/blob/master/vueReactivity/vueReactivity.md)
 
-
 - [ ] 虚拟dom的原理
-
-- [ ] 双向绑定的原理（收集依赖、触发更新）、vue3为何使用proxy，两者的区别
 
 - [ ] 如何实现component
 
