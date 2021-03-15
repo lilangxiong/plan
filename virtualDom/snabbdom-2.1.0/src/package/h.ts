@@ -1,3 +1,10 @@
+/*
+ * @Author: LiLangXiong680
+ * @Date: 2020-09-13 22:09:56
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-14 09:29:22
+ * @FilePath: /plan/virtualDom/snabbdom-2.1.0/src/package/h.ts
+ */
 import { vnode, VNode, VNodeData } from './vnode'
 import * as is from './is'
 
@@ -6,7 +13,7 @@ export type VNodeChildElement = VNode | string | number | undefined | null
 export type ArrayOrElement<T> = T | T[]
 export type VNodeChildren = ArrayOrElement<VNodeChildElement>
 
-function addNS (data: any, children: VNodes | undefined, sel: string | undefined): void {
+function addNS(data: any, children: VNodes | undefined, sel: string | undefined): void {
   data.ns = 'http://www.w3.org/2000/svg'
   if (sel !== 'foreignObject' && children !== undefined) {
     for (let i = 0; i < children.length; ++i) {
@@ -18,11 +25,11 @@ function addNS (data: any, children: VNodes | undefined, sel: string | undefined
   }
 }
 
-export function h (sel: string): VNode
-export function h (sel: string, data: VNodeData | null): VNode
-export function h (sel: string, children: VNodeChildren): VNode
-export function h (sel: string, data: VNodeData | null, children: VNodeChildren): VNode
-export function h (sel: any, b?: any, c?: any): VNode {
+export function h(sel: string): VNode
+export function h(sel: string, data: VNodeData | null): VNode
+export function h(sel: string, children: VNodeChildren): VNode
+export function h(sel: string, data: VNodeData | null, children: VNodeChildren): VNode
+export function h(sel: any, b?: any, c?: any): VNode {
   var data: VNodeData = {}
   var children: any
   var text: any

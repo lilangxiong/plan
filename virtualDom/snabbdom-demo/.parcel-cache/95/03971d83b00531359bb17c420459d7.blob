@@ -1,0 +1,28 @@
+<!--
+ * @Author: LiLangXiong680
+ * @Date: 2021-03-07 17:57:38
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-14 09:15:27
+ * @FilePath: /plan/virtualDom/snabbdom-demo/index.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snabbdom-demo</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- <script src="./src/01-basicusage.js"></script> -->
+  <!-- <script src="./src/02-basicusage.js"></script> -->
+  <!-- <script src="./src/03-modules.js"></script> -->
+  <!-- <script src="./src/04-basicusage.js"></script> -->
+  <script src="d0cdaf1e72e3d682636615feee5b112f"></script>
+
+</body>
+
+</html>

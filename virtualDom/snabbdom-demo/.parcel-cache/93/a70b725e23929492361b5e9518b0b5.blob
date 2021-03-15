@@ -1,0 +1,46 @@
+"use strict";
+
+var _init = require("snabbdom/build/package/init");
+
+var _h = require("snabbdom/build/package/h");
+
+var _attributes = require("snabbdom/build/package/modules/attributes");
+
+var _eventListeners = require("snabbdom/build/package/modules/eventListeners");
+
+/*
+ * @Author: LiLangXiong680
+ * @Date: 2021-03-07 18:00:03
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-14 09:18:55
+ * @FilePath: /plan/virtualDom/snabbdom-demo/src/05-basicusage.js
+ */
+const patch = (0, _init.init)([_attributes.attributesModule, _eventListeners.eventListenersModule]);
+const data = [1, 2, 3, 4];
+let oldVnode = null;
+
+function view(data) {
+  let arr = [];
+  data.forEach(item => {
+    // 不设置key
+    arr.push((0, _h.h)('li', [(0, _h.h)('input', {
+      attrs: {
+        type: 'checkbox'
+      }
+    }), (0, _h.h)('span', item)])); // 设置key
+    // arr.push(h('li', { key: item }, [h('input', { attrs: { type: 'checkbox' } }), h('span', item)]))
+  });
+  let vnode = (0, _h.h)('div', [(0, _h.h)('button', {
+    on: {
+      click: function () {
+        data.unshift(100);
+        vnode = view(data);
+        oldVnode = patch(oldVnode, vnode);
+      }
+    }
+  }, '按钮'), (0, _h.h)('ul', arr)]);
+  return vnode;
+}
+
+let app = document.querySelector('#app');
+oldVnode = patch(app, view(data));
