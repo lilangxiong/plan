@@ -1,0 +1,35 @@
+<!--
+ * @Author: LiLangXiong680
+ * @Date: 2021-03-27 14:02:46
+ * @LastEditors: LiLangXiong680
+ * @LastEditTime: 2021-03-27 14:05:21
+ * @FilePath: /vue/examples/14-component/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>component</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="../../dist/vue.js"></script>
+  <script>
+    const Comp = Vue.component('Comp', {
+      template: '<div> Hello World </div>'
+    })
+    const vm = new Vue({
+      el: '#app',
+      render(h) {
+        return h(Comp)
+      }
+    })
+
+
+  </script>
+</body>
+
+</html>
