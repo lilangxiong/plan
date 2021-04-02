@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/vueSSR/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_2eba0818"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/vueSSR/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4e71e2dd"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/404.vue",
+    "chunkName": "pages/404",
+    "_name": "_1c323b39"
+  },
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_46e3a664"
+  },
+  {
+    "path": "/user",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/user.vue",
+    "chunkName": "pages/user",
+    "children": [
+      {
+        "name": "user",
+        "path": "",
+        "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/user/index.vue",
+        "chunkName": "pages/user/index",
+        "_name": "_49b4bd9d"
+      },
+      {
+        "name": "user-about",
+        "path": "about",
+        "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/user/about.vue",
+        "chunkName": "pages/user/about",
+        "_name": "_29fce2d8"
+      },
+      {
+        "name": "user-id",
+        "path": ":id",
+        "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/user/_id.vue",
+        "chunkName": "pages/user/_id",
+        "_name": "_f8c0f976"
+      }
+    ],
+    "_name": "_0c83dacc"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0773f0da"
+  },
+  {
+    "name": "hello",
+    "path": "/hello",
+    "component": "/Users/apple/Documents/code/plan/nuxt/example/nuxtjs-demo/pages/404.vue",
+    "_name": "_1c323b39"
+  }
+]
