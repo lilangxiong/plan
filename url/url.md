@@ -124,7 +124,7 @@ TCP中还有一个很重要、很重要的信息，就是**端口号**。任何�
 
 首先需要将Html转换成DOM树。浏览器是无法直接识别、使用Html的，需要使用 HTML 解析器将Html转换成树形结构。DOM结构跟Html内容看似一致，不过DOM结构是存放在内存中的，可以通过js增删改查DOM结构。
 
-<img src="./image/img_13.png" width = "400" height = "150"/>
+<img src="./image/img_13.png" width = "600" height = "300"/>
 
 
 完成DOM树的构建之后，渲染引擎开始计算DOM节点的样式。
