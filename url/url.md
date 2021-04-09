@@ -72,7 +72,7 @@ Chrome架构演进的步伐一直没有停下来，下图是现在的Chrome架�
 
 TCP中还有一个很重要、很重要的信息，就是**端口号**。任何想参与互联网通信的应用程序都必须绑定一个有效的端口号(**默认是80端口**)。换句话说，我们可以根据端口号来确定将数据分发给哪个应用程序。数据包在传输层，会被附加上TCP头信息: 通信双方的端口号、数据包序列号。
 
-<img src="./image/img_7.png" width = "300" height = "250"/>
+<img src="./image/img_7.png" width = "400" height = "300"/>
 
 
 **直接使用url就能将数据送达目标主机吗？**
@@ -95,7 +95,7 @@ TCP中还有一个很重要、很重要的信息，就是**端口号**。任何�
 
 如果在响应行的状态码是**301或者302**，网络进程会获取响应头的**Location**中的**重定向**地址，重新发起请求。
 
-<img src="./image/img_10.png" width = "400" height = "150"/>
+<img src="./image/img_10.png" width = "400" height = "200"/>
 
 
 如果响应行的状态码是200， 网络进程则会继续往下处理数据，并通过响应头的**Content-Type**来判断目标主机返回的数据类型。
@@ -113,7 +113,7 @@ TCP中还有一个很重要、很重要的信息，就是**端口号**。任何�
 
 浏览器主进程一旦接收到"**确认提交**"信号，就会更新页面相关状态：停止tab标签的loading、修改前进后退按钮、替换视图中的页面等等
 
-<img src="./image/img_12.png" width = "500" height = "150"/>
+<img src="./image/img_12.png" width = "600" height = "300"/>
 
 
 **第三步，渲染**
@@ -131,7 +131,7 @@ TCP中还有一个很重要、很重要的信息，就是**端口号**。任何�
 
 同样浏览器也是无法直接识别、使用css的。需要先**将css转换成styleSheets**。
 
-<img src="./image/img_14.png" width = "400" height = "150"/>
+<img src="./image/img_14.png" width = "600" height = "300"/>
 
 
 转换成styleSheets之后还需要继续将**css的属性值标准化**，转换成渲染引擎能够理解、标准化的值。如下所示：
@@ -141,7 +141,7 @@ TCP中还有一个很重要、很重要的信息，就是**端口号**。任何�
 
 完成标准化之后，**根据继承、层叠规则计算每一个节点的具体样式**。对于没有设定样式的元素，则会使用浏览器提供的默认样式：UserAgent。最终的元素样式可通过computedStyle来查看。
 
-<img src="./image/img_16.png" width = "300" height = "200"/>
+<img src="./image/img_16.png" width = "600" height = "300"/>
 
 
 **LayoutTree**
@@ -159,12 +159,12 @@ TCP中还有一个很重要、很重要的信息，就是**端口号**。任何�
 
 Chrome为了很方便的实现一些复杂的功能，诸如：CSS3 3D 转换、页面滚动、z轴排序，借鉴了PhotoShop中的"图层"的概念。**渲染引擎会根据布局树，最终生成一个LayerTree（图层树）**。有[层叠属性](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context)（position、z-index、opacity、filter...）的元素、内容超出限定范围需要裁剪（clip）的元素、滚动条都会被单独提升为一个图层。其他元素一般都是附着在父图层上。
 
-<img src="./image/img_17.png" width = "400" height = "200"/>
+<img src="./image/img_17.png" width = "600" height = "300"/>
 
 
 可以通过Chrome 的“开发者工具”中的layers来查看页面的图层。
 
-<img src="./image/img_18.png" width = "400" height = "200"/>
+<img src="./image/img_18.png" width = "600" height = "300"/>
 
 
 **图层绘制**
@@ -172,29 +172,29 @@ Chrome为了很方便的实现一些复杂的功能，诸如：CSS3 3D 转换、
 在完成一件事情时，我们都会将事情划分为一个个小步骤，然后才是按照步骤去完成它。同样的，渲染引擎在绘制图层时，也会划分步骤，这些步骤就叫做"**绘制指令**"
 ,并且会按照顺序把指令组成**绘制列表**。**随后渲染进程的主线程将绘制列表提交给合成线程**。
 
-<img src="./image/img_19.png" width = "400" height = "150"/>
+<img src="./image/img_19.png" width = "500" height = "200"/>
 
 
 图层一般都很大、很长，对于窄小的视口而言，图层不可能在视口中完全展示，需要用户通过滚动来查看整个图层。为了提升渲染性能，没有必要一次性绘制完整个图层的内容。合成线程会将图层切割成一个个小的**图块(tile)**。
 
-<img src="./image/img_20.png" width = "200" height = "350"/>
+<img src="./image/img_20.png" width = "250" height = "400"/>
 
 
 合成线程划分好（优先准备视口附近的图块）图块之后，会通知渲染进程维护的删格化线程池中的**删格化线程**将图块转为**位图**。**图块转为位图的过程也叫删格化**。
 
-<img src="./image/img_21.png" width = "300" height = "150"/>
+<img src="./image/img_21.png" width = "600" height = "300"/>
 
 
 多数情况下，浏览器都会使用GPU来加速位图的生成，上文提到过GPU的操作是在**GPU进程**中的，假设删格化使用了GPU，那么位图最终是保存在GPU内存中的。
 
-<img src="./image/img_22.png" width = "300" height = "150"/>
+<img src="./image/img_22.png" width = "600" height = "300"/>
 
 
 **合成、展示**
 
 当所有的图层转为位图之后，即删格化完成之后，合成线程会给浏览器主进程一个**绘制图块**(**DrawQuad**)的命令。浏览接收到这个命令之后，浏览器进程的viz组件会根据命令，将内容绘制到内存中，并最终展示出来。
 
-<img src="./image/img_23.png" width = "300" height = "150"/>
+<img src="./image/img_23.png" width = "600" height = "300"/>
 
 
 
