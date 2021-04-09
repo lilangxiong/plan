@@ -87,7 +87,7 @@
 
 - [ ] webkit基础知识
 
-- [ ] 浏览器渲染原理
+- [x] [浏览器渲染原理](https://github.com/lilangxiong/plan/blob/master/url/url.md)
 
 - [ ] 重绘重排重合成
 
