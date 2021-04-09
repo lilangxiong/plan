@@ -6,8 +6,6 @@
 
 ### HTML/CSS篇
 
-- [x] [语义化](https://github.com/lilangxiong/plan/blob/master/html/semantic.md)
-
 - [x] [常见布局及居中（水平、垂直、栅格）](https://github.com/lilangxiong/plan/blob/master/layout.md)
 
 - [x] [HTML5新特性](https://github.com/lilangxiong/plan/blob/master/html/README.md)
