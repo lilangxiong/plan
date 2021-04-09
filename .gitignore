@@ -5,5 +5,5 @@
 nuxt/*/node_modules/
 virtualDom/*/node_modules/
 vue/*/node_modules/
-vuex/example/*/node_modules/
+vuex/*/node_modules/
 */node_modules/

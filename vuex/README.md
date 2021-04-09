@@ -1,4 +1,4 @@
-# statemanagement
+# vuex-demo
 
 ## Project setup
 ```

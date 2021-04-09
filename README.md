@@ -6,13 +6,13 @@
 
 ### HTML/CSS篇
 
-- [x] [语义化](https://github.com/lilangxiong/plan/blob/master/semantic.md)
+- [x] [语义化](https://github.com/lilangxiong/plan/blob/master/html/semantic.md)
 
 - [x] [常见布局及居中（水平、垂直、栅格）](https://github.com/lilangxiong/plan/blob/master/layout.md)
 
-- [ ] HTML5新特性
+- [x] [HTML5新特性](https://github.com/lilangxiong/plan/blob/master/html/README.md)
 
-- [ ] CSS3新特性、动画实现方式以及它们之间的区别
+- [x] [CSS3新特性、动画实现方式以及它们之间的区别](https://github.com/lilangxiong/plan/blob/master/css/README.md)
 
 - [ ] flex布局、grid布局
 
