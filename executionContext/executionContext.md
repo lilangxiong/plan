@@ -6,7 +6,8 @@
 
 并且js编译是一个很复杂的过程，它会涉及到语法/词法分析、代码优化、代码生成。
 
-![图1](./image/chapter2/1.png)
+<img src="./image/chapter2/1.png" width = "600" height = "100"/>
+
 
 js经过引擎的编译之后，代码会被分成两大部分：
 - 可执行代码
@@ -22,7 +23,8 @@ function introduce() {
 introduce();
 ```
 
-![图2](./image/chapter2/2.png)
+<img src="./image/chapter2/2.png" width = "300" height = "300"/>
+
 
 执行上下文是执行一段js代码时的运行环境，包含：
 - 变量环境 - Viriable Environment
@@ -129,15 +131,19 @@ introduce();
 
 - 首先会创建一个全局执行上下文
 
-![图3](./image/chapter2/3.png)
+<img src="./image/chapter2/3.png" width = "400" height = "150"/>
+
 
 - 执行到introduce()时，会编译introdeuce函数，创建一个函数执行上下文
 
-![图4](./image/chapter2/4.png)
+
+<img src="./image/chapter2/4.png" width = "400" height = "150"/>
+
 
 - 执行到mySex()时，同样会编译mySex函数，又会创建一个函数执行上下文
 
-![图5](./image/chapter2/5.png)
+<img src="./image/chapter2/5.png" width = "400" height = "150"/>
+
 
 
 上面这段代码是一段很简单的代码，都已经创建了3个执行上下文。通常情况下，我们要实现一个交互较多的页面，它对应的js代码就会很复杂，可能会存在多个函数连续调用、嵌套调用的情况，这个时候js引擎就会创建多个执行上下文。那么就有个问题：***这么多的执行上下文，js引擎是如何管理的呢***？
@@ -148,41 +154,50 @@ introduce();
 
 我们可以通过叠盘子这件事情来形象的理解栈是什么。我们在洗盘子的时候，先洗好的盘子总是放在下面，后面洗好的盘子则是一个一个的往上叠。当要使用盘子时，则是从最上面一个一个的往下取用。叠放盘子，就是入栈。取用盘子就是出栈。当然 ***栈是有大小限制的***，就像我们不可能无限的往上面叠盘子，到达一定高度后它就会坍塌一样。对应到js引擎中，这就叫做：***栈溢出 - Stack Overflow***。所以在实际开发过程中需要注意不要循环引用，递归调用要有终止条件。
 
-![图6](./image/chapter2/6.jpg)
+<img src="./image/chapter2/6.jpg" width = "400" height = "150"/>
+
 
 在js中用来管理执行上下文的栈叫做：***调用栈 - Call Stack***。
 
 在Chrome浏览器中我们可以通过下面这种方式来查看调用栈的情况。栈的最底部是 anonymous，即全局的函数入口。
 
-![图8](./image/chapter2/8.png)
+<img src="./image/chapter2/8.png" width = "400" height = "250"/>
+
 
 也可以通过console.trace()来追踪函数的调用过程。
 
-![图8-1](./image/chapter2/8-1.png)
+<img src="./image/chapter2/8-1.png" width = "300" height = "250"/>
 
-![图8-2](./image/chapter2/8-2.png)
+
+<img src="./image/chapter2/8-2.png" width = "300" height = "150"/>
+
 
 接下来，我们结合Chrome浏览器提供的信息分析以上代码的调用栈使用过程。
 
 - 首先是创建全局执行上下文，并压入调用栈。
 
-![图9](./image/chapter2/9.png)
+<img src="./image/chapter2/9.png" width = "300" height = "300"/>
+
 
 - 执行introduce函数时，编译函数，创建introduce函数执行上下文，压入栈。
 
-![图10](./image/chapter2/10.png)
+<img src="./image/chapter2/10.png" width = "300" height = "300"/>
+
 
 - 执行mySex函数时，编译函数，创建mySex函数执行上下文，压入栈。
 
-![图11](./image/chapter2/11.png)
+<img src="./image/chapter2/11.png" width = "300" height = "300"/>
+
 
 - mySex函数执行完毕时，mySex函数执行上下文从栈顶弹出。
 
-![图12](./image/chapter2/12.png)
+<img src="./image/chapter2/12.png" width = "300" height = "300"/>
+
 
 - introduce函数执行完毕时，introduce函数执行上下文从栈顶弹出。
 
-![图13](./image/chapter2/13.png)
+<img src="./image/chapter2/13.png" width = "300" height = "300"/>
+
 
 从上面的使用过程来看，***调用栈其实也是一种追踪函数执行的机制***。通过调用栈，我们可以很清楚的知道，当前正在被执行的是哪个函数，它与其他函数之间的调用关系。
 
@@ -217,7 +232,7 @@ function introduce(){
 introduce()
 ```
 
-![图15](./image/chapter2/15.png)
+<img src="./image/chapter2/15.png" width = "400" height = "200"/>
 
 上述代码会先创建函数上下文，从图中可以看出：
 
@@ -227,7 +242,7 @@ introduce()
 
 函数体内代码块中通过 let 声明的变量(name_2、name_4)，并没有被马上放到词法环境中。直至代码执行到代码块：
 
-![图16](./image/chapter2/16.png)
+<img src="./image/chapter2/16.png" width = "400" height = "200"/>
 
 从图中可以看出，代码块中通过 let 声明的变量会在词法环境中使用单独的区域存放。它与代码块外部通过 let 声明的变量都是独立存在的，互不影响。
 
@@ -235,11 +250,11 @@ introduce()
 
 当执行到console.log(name_1)时，js引擎是如何查找变量的呢？
 
-![图17](./image/chapter2/17.png)
+<img src="./image/chapter2/17.png" width = "400" height = "200"/>
 
 js引擎会先从词法环境的栈顶查到栈底，查到就直接返回，不然就会继续在变量环境中查找。代码块内的代码执行完毕之后，代码块内部定义的变量(let\const声明)就会被弹出栈顶。
 
-![图18](./image/chapter2/18.png)
+<img src="./image/chapter2/18.png" width = "400" height = "200"/>
 
 通过上面简单的解释，能清楚的知道ES6是通过将let\const声明的变量存放在词法环境，var声明的变量存放在变量环境中，来避免了两种不同声明方式的重名冲突。
 
@@ -262,7 +277,7 @@ introduce();
 
 回顾调用栈，我们知道上述代码的调用栈道结构如下：
 
-![图19](./image/chapter2/19.png)
+<img src="./image/chapter2/19.png" width = "250" height = "300"/>
 
 如果按照调用栈的顺序查找name变量，console.log('我叫' + name)打印出来的应该是“我叫李四”。
 
@@ -272,7 +287,7 @@ introduce();
 
 js引擎在查找变量时并不是完全按照调用栈的顺序来查找的。当在当前执行上下文没有找到变量时，引擎会到outer指向的外部执行上下中继续查找。
 
-![图20](./image/chapter2/20.png)
+<img src="./image/chapter2/20.png" width = "250" height = "300"/>
 
 ***沿着outer所形成的查找链条就是作用域链***。
 
@@ -299,4 +314,4 @@ function show1() {
 }
 show1();
 ```
-![图21](./image/chapter2/21.png)
+<img src="./image/chapter2/21.png" width = "450" height = "100"/>
