@@ -266,7 +266,8 @@ class EventEmitter {
 
 **发布/订阅模式**由统一调度中心调用，因此发布者和订阅者不需要知道对方的存在。
 
-![模式总结](./image/模式总结.png)
+<img src="./image/模式总结.png" width = "300" height = "250"/>
+
 
 ## 响应式模拟
 
@@ -311,7 +312,8 @@ class EventEmitter {
 
 - 整体结构
 
-![vue整体结构](./image/vue整体结构.png)
+<img src="./image/vue整体结构.png" width = "400" height = "200"/>
+
 
 - Vue
   - 把 data 中的成员注入到 Vue 实例，并且把 data 中的成员转成 getter/setter Observer
@@ -336,7 +338,8 @@ class EventEmitter {
 
 - 结构
 
-![vue功能结构](./image/vue功能结构.png)
+<img src="./image/vue功能结构.png" width = "300" height = "250"/>
+
 
 ```javascript
 class Vue {
@@ -379,7 +382,8 @@ class Vue {
   
 - 结构
 
-![Observer结构](./image/Observer结构.png)
+<img src="./image/Observer结构.png" width = "300" height = "200"/>
+
 
 ```javascript
 class Observer {
@@ -417,7 +421,7 @@ class Observer {
 
 是通过闭包的形式实现的。
 
-![Observer_闭包](./image/Observer_闭包.png)
+<img src="./image/Observer_闭包.png" width = "500" height = "250"/>
 
 
 ```javascript
@@ -462,7 +466,8 @@ class Vue {
 
 - 结构
 
-![Compiler结构](./image/Compiler结构.png)
+<img src="./image/Compiler结构.png" width = "300" height = "250"/>
+
 
 ```javascript
 class Compiler {
@@ -586,7 +591,9 @@ class Vue {
 
 ##  Dep(Dependency)
 
-![Dep](./image/Dep.png)
+<img src="./image/Dep.png" width = "450" height = "200"/>
+
+Compiler结构
 
 - 功能
   - 收集依赖，添加观察者(watcher)
@@ -594,7 +601,8 @@ class Vue {
 
 - 结构
 
-![Dep结构](./image/Dep结构.png)
+<img src="./image/Dep结构.png" width = "300" height = "250"/>
+
 
 ```javascript
 // 发布者
@@ -659,7 +667,8 @@ class Observer {
 
 ## Watcher
 
-![Watcher](./image/Watcher.png)
+<img src="./image/Watcher.png" width = "500" height = "200"/>
+
 
 - 功能
   - 当数据变化触发依赖， dep 通知所有的 Watcher 实例更新视图
@@ -667,7 +676,8 @@ class Observer {
 
 - 结构
 
-![Watcher结构](./image/Watcher结构.png)
+<img src="./image/Watcher结构.png" width = "250" height = "200"/>
+
 
 ```javascript
 class Watcher {
@@ -805,7 +815,8 @@ class Compiler {
 
 - 通过下图回顾整体流程
 
-![整体流程](./image/整体流程.png)
+<img src="./image/整体流程.png" width = "600" height = "200"/>
+
 
 - Vue
   - 记录传入的选项，设置 $data/$el
