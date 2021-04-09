@@ -12,7 +12,9 @@
 
 - [x] [CSS3新特性、动画实现方式以及它们之间的区别](https://github.com/lilangxiong/plan/blob/master/css/README.md)
 
-- [ ] flex布局、grid布局
+- [x] [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+- [x] [grid布局](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
 - [ ] 盒模型
 
