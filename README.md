@@ -46,6 +46,9 @@
 
 - [ ] js常见API函数
 
+- [x] [new 原理](https://github.com/lilangxiong/plan/blob/master/new/new.md)
+
+- [x] [typeof、instanceof原理](https://github.com/lilangxiong/plan/blob/master/instanceof/instanceof.md)
 
 ### 网络篇
 
@@ -59,7 +62,7 @@
 
 - [ ] HTTP状态码
 
-- [ ] 网络安全，XSS和CFRF（如何防御）
+- [ ] 网络安全
 
 - [ ] Session、Cookie
 
