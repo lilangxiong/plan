@@ -63,7 +63,7 @@
 
 - [ ] Session、Cookie
 
-- [ ] 缓存
+- [x] [缓存](https://github.com/lilangxiong/plan/blob/master/cache/cache.md)
 
 - [ ] 跨域
 
