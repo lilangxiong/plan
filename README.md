@@ -28,7 +28,7 @@
 
 - [ ] 垃圾回收机制
 
-- [ ] 事件模型
+- [x] [事件模型](https://github.com/lilangxiong/plan/blob/master/domEvent/domEvent.md)
 
 - [ ] 事件循环，任务队列（微任务、宏任务）与定时器
 
