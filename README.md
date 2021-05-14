@@ -26,7 +26,9 @@
 
 - [x] [执行上下文、作用域、作用域链、this、闭包](https://github.com/lilangxiong/plan/blob/master/executionContext/executionContext.md)
 
-- [x] [垃圾回收机制](https://github.com/lilangxiong/plan/blob/master/gc/gc.md)
+- [x] [垃圾回收机制概述](https://github.com/lilangxiong/plan/blob/master/gc/gc.md)
+
+- [x] [垃圾回收机制详解](https://github.com/lilangxiong/plan/blob/master/gc/gcArithmetic.md)
 
 - [x] [事件模型](https://github.com/lilangxiong/plan/blob/master/domEvent/domEvent.md)
 
