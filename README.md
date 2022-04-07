@@ -4,27 +4,35 @@
 
 - [x] [面试](https://github.com/lilangxiong/plan/blob/master/interview/interview.md)
 
-### HTML/CSS篇
+### HTML/CSS 篇
 
 - [x] [常见布局及居中（水平、垂直、栅格）](https://github.com/lilangxiong/plan/blob/master/layout.md)
 
-- [x] [HTML5新特性](https://github.com/lilangxiong/plan/blob/master/html/README.md)
+- [x] [HTML5 新特性](https://github.com/lilangxiong/plan/blob/master/html/README.md)
 
-- [x] [CSS3新特性、动画实现方式以及它们之间的区别](https://github.com/lilangxiong/plan/blob/master/css/README.md)
+- [x] [CSS3 新特性、动画实现方式以及它们之间的区别](https://github.com/lilangxiong/plan/blob/master/css/README.md)
 
-- [x] [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+- [x] [flex 布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
-- [x] [grid布局](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+- [x] [grid 布局](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
 - [ ] 盒模型
 
 - [x] [BFC](https://github.com/lilangxiong/plan/blob/master/css/BFC.md)
 
+### JS 篇
 
-### JS篇
-- [ ] javascript的执行过程
+- [ ] javascript 的执行过程
 
 - [x] [执行上下文、作用域、作用域链、this、闭包](https://github.com/lilangxiong/plan/blob/master/executionContext/executionContext.md)
+
+- [x] [原型链](https://github.com/lilangxiong/plan/blob/master/protytype/prototype.md)
+
+- [x] [new 原理](https://github.com/lilangxiong/plan/blob/master/protytype/new.md)
+
+- [x] [typeof、instanceof 原理](https://github.com/lilangxiong/plan/blob/master/protytype/instanceof.md)
+
+- [x] [继承](https://github.com/lilangxiong/plan/blob/master/protytype/extends.md)
 
 - [x] [垃圾回收机制概述](https://github.com/lilangxiong/plan/blob/master/gc/gc.md)
 
@@ -32,11 +40,13 @@
 
 - [x] [事件模型](https://github.com/lilangxiong/plan/blob/master/domEvent/domEvent.md)
 
-- [ ] 事件循环，任务队列（微任务、宏任务）与定时器
+- [x] [事件循环](https://github.com/lilangxiong/plan/blob/master/async/eventLoop.md)
 
-- [ ] 原型链
+- [x] [promise](https://github.com/lilangxiong/plan/blob/master/async/promise.md)
 
-- [x] [promise、迭代器、生成器](https://github.com/lilangxiong/plan/blob/master/promise/promise.md)
+- [x] [迭代器、生成器](https://github.com/lilangxiong/plan/blob/master/async/generator.md)
+
+- [x] [async、await](https://github.com/lilangxiong/plan/blob/master/async/async.md)
 
 - [ ] 设计模式
 
@@ -46,23 +56,19 @@
 
 - [ ] 函数式编程，函数柯里化
 
-- [ ] js常见API函数
-
-- [x] [new 原理](https://github.com/lilangxiong/plan/blob/master/new/new.md)
-
-- [x] [typeof、instanceof原理](https://github.com/lilangxiong/plan/blob/master/instanceof/instanceof.md)
+- [ ] js 常见 API 函数
 
 ### 网络篇
 
-- [ ] HTTP发展背景、历程
+- [ ] HTTP 发展背景、历程
 
-- [ ] OSI七层协议（TCP/UDP）
+- [ ] OSI 七层协议（TCP/UDP）
 
 - [ ] HTTPS
 
 - [ ] HTTP2
 
-- [ ] HTTP状态码
+- [ ] HTTP 状态码
 
 - [ ] 网络安全
 
@@ -72,15 +78,15 @@
 
 - [ ] 跨域
 
-- [ ] CDN及DNS
+- [ ] CDN 及 DNS
 
-- [x] [输入url到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url/url.md)
+- [x] [输入 url 到页面展示的过程](https://github.com/lilangxiong/plan/blob/master/url/url.md)
 
 ### 移动篇
 
 - [ ] 自适应（rem、vh、vw）
 
-- [ ] H5与原生的交互原理（jsBridge）、webview
+- [ ] H5 与原生的交互原理（jsBridge）、webview
 
 - [ ] 兼容性
 
@@ -90,7 +96,7 @@
 
 ### 浏览器
 
-- [ ] webkit基础知识
+- [ ] webkit 基础知识
 
 - [x] [浏览器渲染原理](https://github.com/lilangxiong/plan/blob/master/url/url.md)
 
@@ -100,11 +106,11 @@
 
 ### 工程化
 
-- [ ] webpack打包原理，热更新原理
+- [ ] webpack 打包原理，热更新原理
 
-- [ ] webpack plugins跟loader
+- [ ] webpack plugins 跟 loader
 
-- [ ] babel原理，AST原理
+- [ ] babel 原理，AST 原理
 
 - [ ] rollup
 
@@ -116,20 +122,19 @@
 
 - [ ] CI/CD
 
+### node 篇
 
-### node篇
-
-- [ ] node特性
+- [ ] node 特性
 
 - [ ] 多进程、cluster、child process
 
-- [ ] pm2的原理、进程守护、日志等
+- [ ] pm2 的原理、进程守护、日志等
 
-- [ ] koa/express的特性及中间件的原理
+- [ ] koa/express 的特性及中间件的原理
 
 - [ ] express、koa，两者区别
 
-- [ ] nginx的简单配置，反向代理实现，转发实现，如何实现负载均衡的、日志
+- [ ] nginx 的简单配置，反向代理实现，转发实现，如何实现负载均衡的、日志
 
 - [ ] 数据库、负载均衡、高并发
 
@@ -145,18 +150,17 @@
 
 - [ ] 高级数据结构：树、图、广度优先/深度优先搜索
 
-
 ### 框架篇
 
-- [ ] vue解决了什么问题
+- [ ] vue 解决了什么问题
 
-- [ ] vue和react的区别
+- [ ] vue 和 react 的区别
 
-- [x] [vue响应式原理](https://github.com/lilangxiong/plan/blob/master/vueReactivity/vueReactivity.md)
+- [x] [vue 响应式原理](https://github.com/lilangxiong/plan/blob/master/vueReactivity/vueReactivity.md)
 
-- [ ] 虚拟dom的原理
+- [ ] 虚拟 dom 的原理
 
-- [ ] 如何实现component
+- [ ] 如何实现 component
 
 - [ ] 组件间通讯
 
@@ -176,7 +180,7 @@
 
 - [ ] 国际化如何实现
 
-- [ ] 提升wabpack的编译速度、webpack的打包原理,如何抽取css的
+- [ ] 提升 wabpack 的编译速度、webpack 的打包原理,如何抽取 css 的
 
 - [ ] 最有成就的项目，遇到过哪些难点，如何解决的（node-master/node-deploy）
 
@@ -206,15 +210,14 @@
 
 - [ ] 经常去什么技术网站？读过什么书?
 
-- [ ] 前沿的web标准、技术（微前端、serverless、webComponent等）
+- [ ] 前沿的 web 标准、技术（微前端、serverless、webComponent 等）
 
 - [x] [webRTC](https://github.com/lilangxiong/plan/blob/master/webrtc/webrtc.md)
-
 
 ### 虾皮专题
 
 - [ ] 算法 - 建大顶堆
 
-- [ ] 算法 - 2亿数据取最大的1000个，分别按时间复杂度最低、空间复杂度最低来解
+- [ ] 算法 - 2 亿数据取最大的 1000 个，分别按时间复杂度最低、空间复杂度最低来解
 
 - [ ] 算法 - O(n)时间复杂度、O(1)空间复杂度解判断回文，需要在线写代码并测试通过
