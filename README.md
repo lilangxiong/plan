@@ -38,8 +38,6 @@
 
 - [x] [垃圾回收机制详解](https://github.com/lilangxiong/plan/blob/master/gc/gcArithmetic.md)
 
-- [x] [事件模型](https://github.com/lilangxiong/plan/blob/master/domEvent/domEvent.md)
-
 - [x] [事件循环](https://github.com/lilangxiong/plan/blob/master/async/eventLoop.md)
 
 - [x] [promise](https://github.com/lilangxiong/plan/blob/master/async/promise.md)
@@ -47,6 +45,8 @@
 - [x] [迭代器、生成器](https://github.com/lilangxiong/plan/blob/master/async/generator.md)
 
 - [x] [async、await](https://github.com/lilangxiong/plan/blob/master/async/async.md)
+
+- [x] [事件模型](https://github.com/lilangxiong/plan/blob/master/domEvent/domEvent.md)
 
 - [ ] 设计模式
 
