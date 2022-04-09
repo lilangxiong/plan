@@ -172,7 +172,7 @@
 
 ### 性能优化
 
-- [时间分片](https://github.com/lilangxiong/plan/blob/master/optimization
+- [x] [时间分片](https://github.com/lilangxiong/plan/blob/master/optimization
 /timeSlicing.md)
 
 ### 项目篇
