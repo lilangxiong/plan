@@ -78,6 +78,7 @@ function HaveResolvePromise() {
 }
 async function getResult() {
   console.log(1);
+  // 以下代码相当于
   let a = await HaveResolvePromise();
   console.log(a);
   console.log(2);

@@ -170,6 +170,11 @@
 
 - [x] [vue-router](https://github.com/lilangxiong/plan/blob/master/vueRouter/vueRouter.md)
 
+### 性能优化
+
+- [时间分片](https://github.com/lilangxiong/plan/blob/master/optimization
+/timeSlicing.md)
+
 ### 项目篇
 
 - [ ] 性能优化（移动端，性能数据收集、分析、优化、优化前后效果对比）
